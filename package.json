@@ -1,0 +1,27 @@
+{
+  "name": "library-management-system",
+  "version": "1.0.0",
+  "description": "This is a console-based Library Management System developed in TypeScript. The purpose of this software is to demonstrate fundamental TypeScript programming concepts including classes, recursion, arrays, asynchronous functions, and exception handling.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kigozi-nich/Library-Management-System.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kigozi-nich/Library-Management-System/issues"
+  },
+  "homepage": "https://github.com/kigozi-nich/Library-Management-System#readme",
+  "devDependencies": {
+    "@types/node": "^25.9.3",
+    "typescript": "^6.0.3"
+  }
+}
