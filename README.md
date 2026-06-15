@@ -19,7 +19,7 @@ This project was created to satisfy the TypeScript module requirements and inclu
 
 ## Demo Video
 
-[Software Demo Video](PASTE_YOUR_VIDEO_LINK_HERE)
+[Software Demo Video](https://youtu.be/1VxZvs990s4)
 
 ## Learning Strategies
 
