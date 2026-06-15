@@ -1,3 +1,6 @@
+/**
+ * Entry point for the console-based Library Management System.
+ */
 import { Library } from "./Library";
 import { Book } from "./Books";
 import readline from "readline";
@@ -6,6 +9,9 @@ const library = new Library();
 
 let rl: readline.Interface | undefined;
 
+/**
+ * Returns a cached readline interface, creating it if needed.
+ */
 function getReadlineInterface(): readline.Interface {
     if (!rl) {
         rl = readline.createInterface({
@@ -17,6 +23,9 @@ function getReadlineInterface(): readline.Interface {
     return rl;
 }
 
+/**
+ * Closes the readline interface when the application exits.
+ */
 function closeReadline(): void {
     if (rl) {
         rl.close();
@@ -24,12 +33,19 @@ function closeReadline(): void {
     }
 }
 
+/**
+ * Prompts the user with a question and returns their input.
+ * @param question - The prompt text shown to the user.
+ */
 function ask(question: string): Promise<string> {
     return new Promise(resolve =>
         getReadlineInterface().question(question, resolve)
     );
 }
 
+/**
+ * Main menu loop that displays options and handles user commands.
+ */
 async function menu(): Promise<void> {
 
     await library.loadBooks();
